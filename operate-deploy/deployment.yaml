@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: nginx
+  name: nginx
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: nginx
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: ip-10-1-105-165.ap-northeast-2.compute.internal/unn-project/nginx:1
+        imagePullPolicy: Always
+      imagePullSecrets:
+      - name: registry-secret
