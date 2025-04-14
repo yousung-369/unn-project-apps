@@ -6,7 +6,7 @@ metadata:
     app: nginx
   name: nginx
 spec:
-  replicas: 4
+  replicas: 3
   selector:
     matchLabels:
       app: nginx
@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: ip-10-1-105-165.ap-northeast-2.compute.internal/unn-project/nginx:1
+        image: nginx
         imagePullPolicy: Always
       imagePullSecrets:
       - name: registry-secret
