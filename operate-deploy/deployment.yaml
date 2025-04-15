@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: https://ec2-43-203-173-214.ap-northeast-2.compute.amazonaws.com/unn-project/nginx:latest
+        image: https://ec2-43-203-173-214.ap-northeast-2.compute.amazonaws.com/unn-project/nginx5:latest
         imagePullPolicy: Always
       imagePullSecrets:
       - name: regcred
