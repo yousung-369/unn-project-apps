@@ -22,4 +22,4 @@ spec:
         image: ec2-15-164-226-109.ap-northeast-2.compute.amazonaws.com/unn-project/nginx:9
         imagePullPolicy: Always
       imagePullSecrets:
-      - name: regcred
+      - name: 
