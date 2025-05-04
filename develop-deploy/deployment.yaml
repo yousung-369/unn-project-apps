@@ -21,5 +21,4 @@ spec:
       - name: nginx
         image: ec2-15-164-226-109.ap-northeast-2.compute.amazonaws.com/unn-project/nginx:latest
         imagePullPolicy: Always
-      imagePullSecrets:
-      - name:
+
