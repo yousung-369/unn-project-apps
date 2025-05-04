@@ -19,6 +19,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: ec2-15-164-226-109.ap-northeast-2.compute.amazonaws.com/unn-project/nginx:latest
+        image: ip-10-102-96-192.ap-northeast-2.compute.internal/unn-project/nginx:latest
         imagePullPolicy: Always
 
