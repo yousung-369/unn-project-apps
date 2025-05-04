@@ -7,13 +7,10 @@ metadata:
   name: nginx
 spec:
   ports:
-  - nodePort: 30201
-    port: 80
+  - port: 80
     protocol: TCP
     targetPort: 80
   selector:
     app: nginx
   sessionAffinity: None
-  type: NodePort
-status:
-  loadBalancer: {}
+  type: LoadBalancer
