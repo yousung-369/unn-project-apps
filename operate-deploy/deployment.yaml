@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: ec2-15-164-226-109.ap-northeast-2.compute.amazonaws.com/unn-project/nginx:9
+        image: ec2-52-79-243-27.ap-northeast-2.compute.amazonaws.com/unn-project/mynginx-image
         imagePullPolicy: Always
       imagePullSecrets:
       - name: 
